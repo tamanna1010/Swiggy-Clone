@@ -1,0 +1,26 @@
+{
+  "name": "swiggy-design",
+  "version": "1.0.0",
+  "description": "This is a project from Namaste React",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamanna1010/Swiggy-Clone.git"
+  },
+  "keywords": [
+    "swiggy",
+    "react"
+  ],
+  "author": "Tamanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamanna1010/Swiggy-Clone/issues"
+  },
+  "homepage": "https://github.com/tamanna1010/Swiggy-Clone#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}

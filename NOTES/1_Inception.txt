@@ -1,0 +1,39 @@
+HTML Files shprtcut - Emmet
+html:5 shortcut - it will give you basic skeleton of HTML5
+
+Hello world from Javascript ---
+Create a heading vriable first
+Then point it back to root element
+root.appendChild(heading)
+
+INJECTING REACT INTO OUR PROJECT --->
+CDN Links - Content delivery networks
+We pull react library which are hosted on this link
+These CDN Links are just plain javascript code
+
+HOW TO VERIFY IF YOU HAVE INJECTED REACT SUCCESFULLY OR NOT ? 
+Go to UI, on the Inspect -> Console, type "React" and "ReactDOM", you must see a lot of functions that are provided by React.
+
+WHY THERE ARE 2 REACT CDN LINKS? 
+1. React.development - This is the core of react
+2. React.dom.development - 
+This file is required to modify the DOM (Document Object Model)
+We have different types of React - React Native, React 3D..
+So, this link is to tell what work we want to do with React here
+
+HELLO WORLD USING REACT ---
+<script>
+        const heading = React.createElement("h1", {id:"heading", xyz: "abc"}, "Hello world from React");
+        // here heading is just a normal javascript object
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(heading);
+        // render method converts javascript object into html tag and append it in DOM
+</script>
+
+The above code becomes very untidy, so we have JSK to make our lives easier.
+
+Order of the files present in index.html file, matter - 
+1. React.js
+2. ReactDOM.js
+3. script - App.js 
+

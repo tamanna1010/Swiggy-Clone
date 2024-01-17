@@ -1,0 +1,49 @@
+GIT STEPS -
+Make a repository on GITHUB and make it public'
+git init - To make our local a git repo (.git file will be generated) (-U will appear in VS Code)
+git branch -M main - (It will change default master branch to main)
+git add . - Combines all files together
+git commit -m "Pushing episode-01"
+git remote add origin "<url>" - Configure local repo to remote repo
+git push origin main - pushed the code
+For verification, you should see 100% done in the  GIT Terminal 
+
+NPM -
+It is not Node Package Manager
+It is a package manager
+It is a standard repository for all the packages
+Any package you need to include in your project, we use NPM
+
+HOW TO ADD NPM TO OUR PROJECT ? 
+npm init 
+answer few questions
+For verification, Package.json file will be created 
+Package.json file is the configuration for our NPM
+
+WHAT RE BUNDLERS? 
+Bundler is the one that minifize the files to make the roject ready for production
+For eg. WebPack, Parcel, weet
+We will use Parcel here in this project
+In Create React App, WebPack is used
+
+TYPES OF DEPENDENCIES ---
+1. DEPENDENCIES (For production) (npm install parcel)
+2. DEV DEPENDENCIES (required For development) (npm install -D parcel)
+
+PACKAGE.JSON?
+It stores the details of the dependencies and their version (using a caret or tilde)
+We prefer caret (~) bcoz it will update according to the minor version updates.
+
+PACKAGE-LOCK.JSON ? 
+It stores the exact version that we used in development phase, so that it does not cause 
+any issues in the production phase.
+
+NODE MODULES ? 
+Node modules is like a database for all the libraries
+
+TRANSITIVE DEPENDENCIES? 
+Parcel may need some other library, which intentionally needs some other library, due to which
+Node modules keep all the libraries at once in our project
+
+
+
