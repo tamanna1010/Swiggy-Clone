@@ -1,8 +1,5 @@
-{/* <div id="parent">
-    <div id="child">
-        <h1>Testing child</h1>
-    </div>
-</div> */}
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const heading = React.createElement(
     "div", 
@@ -24,6 +21,5 @@ const heading = React.createElement(
         ]
         )
     );
-console.log(heading)
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);

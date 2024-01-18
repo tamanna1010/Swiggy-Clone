@@ -45,5 +45,12 @@ TRANSITIVE DEPENDENCIES?
 Parcel may need some other library, which intentionally needs some other library, due to which
 Node modules keep all the libraries at once in our project
 
+npx parcel index.html - Parcel will build a development build and will host it to server
+npm - installing a package
+npx - executing a package
+
+It created a server for us - localhost:1234
+
+
 
 
