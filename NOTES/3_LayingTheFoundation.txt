@@ -1,0 +1,44 @@
+How to start React app? 
+In package.json file, add scripts file - 
+"start": "parcel index.html",
+"build": "parcel build index.html"
+Then on the terminal, run "npm run start"
+
+JSX - 
+Jsx is not HMTL Inside JS, JSX is not HMTL
+ISX is HTML/XML like syntax, which makes developers life easy
+jsx element === react.createElement (Both are objects)
+JSX is not understood by JS Engine/ Browsers
+JSX Will takes camelCase attributes
+
+Babel - Javascript compiler / Javascript transpiler
+JSX is transpiled first, then it reaches to JS Engine (Done by Babel (which came by Parcel))
+Babel is a package installed by Parcel
+Babel converts ES6 Syntax into the syntax that browser understands
+JSX - Transpiled - React.createElement - Object creation - root.render - then becomes a tag
+
+TYPES OF COMPONENTS - 
+1. Class Based Component
+2. Functioal Component
+
+FUNCTIONAL COMPONENT - It is a normal javascript function which returns a piece of JSX Code
+Syntax - Both the below syntax are same only
+1. const head = () => {
+    return <h1>Hey...</h1>
+}
+(OR)
+2. const haeding = () => (
+    <h1>Hello</h1>
+)
+
+COMPONENT COMPOSITION - 
+<Title/> - compoennt - <Title></Title> - {Title()}
+{title} - element
+{} - we can write any Javascript code inside curly brackets
+
+CROSS SITE SCRIPTING - 
+Through the API Call, any bad API can inject a piece of code onto your browser to stole cookies, local storage,
+session storage to get some info about personal details
+JSX Prevents this attack in {}, hence we can freely use it, JSX will take care of the injection attacks.
+
+
