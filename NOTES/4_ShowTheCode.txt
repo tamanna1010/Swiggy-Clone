@@ -1,0 +1,32 @@
+DESIGN ---
+
+Header - 
+    Logo
+    Nav Items
+Body -
+    Search
+    Restaurat Container
+        Restaurant Cards
+            Image
+            Name of Restaurant
+            Star Rating
+            Cuisines
+            delivery time
+Footer -
+    Copyright
+    Links
+    Address
+    Contact
+
+PROPS --
+Passing arguments to a component 
+Example - res name, cuisines to a resturant 
+
+CONFIG DRIVEN UI - 
+Delhi - Different Restaurants - Data fetched from API 
+
+BEST PRACTICES OF WRITING A CODE --
+Maps keys - 
+Use unique ID (Best practice)
+Use index
+Not using keys at all (Worst practice)
