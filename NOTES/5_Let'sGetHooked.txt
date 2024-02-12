@@ -1,0 +1,24 @@
+Structuring the app - 
+src - 
+    components
+        Body.js
+        Header.js
+        RestaurantCard.js
+    utils
+        constants.js
+        mockData.js
+    App.js
+
+useState ----
+To create powerful state variables
+To update DOM effectively 
+
+How it updates ? 
+When I reload the page, component automatically updates
+
+Reconciliation Algorithm ---
+Initially 7 cards - then using filter - 3 cards
+Virtual DOM - representation of Actual DOM - Javascript object (like React.createElement)
+Diff algorithm - computes difference between previous and new Virtual DOM
+
+React Fiber - came in React 16, to calculate diff between 2 Virtual DOMs
