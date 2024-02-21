@@ -1,0 +1,32 @@
+Monolithic Architecture ---
+All UI, Backend, DB in same place.
+If changes are done in one app, all will be deployed again. 
+
+MicroServices ---
+Separation of Concerns
+Single Responsibility Principle
+All these services talk to each other
+UI - React, Angular
+Backend - Java, Python
+All services run on a specific port --- UI on 1234, Backend on 1235
+All are deployed on same domain in the end
+/api - Backend
+/auth - UI
+/login - Database
+
+useEffect Hook - 
+called after the render cycle of the Body component is completed
+Page Loads --> Render Shimmer UI --> API Fetch call --> Render on UI
+
+CORS Policy - 
+Calling Swiggy API from Localhost has been blocked due to Cors Policy
+Browsers block API to call from one origin to another origin
+
+How to Bypass CORS Error - 
+CORS Chrome extensions
+Or you can use proxy
+
+Why to use useState Hook ?
+Because normal javascript variable will not update DOM and will not re-render the whole component 
+if the state of the variable is updated.
+Whole component is updated when a state variable is updated, then it matches diff and update it

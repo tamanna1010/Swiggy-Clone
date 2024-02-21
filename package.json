@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/tamanna1010/Swiggy-Clone.git"
   },
+  "proxy": "https://run.mocky.io/v3/4e647b4f-e2e3-4cf0-ad48-1c84d2648c82",
   "keywords": [
     "swiggy",
     "react"
@@ -27,6 +28,9 @@
     "process": "^0.11.10"
   },
   "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "http-proxy-middleware": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

@@ -35,7 +35,7 @@
 .res-card {
     margin: 10px;
     width: 23%;
-    height: 520px;
+    height: 600px;
 
 }
 
@@ -59,4 +59,21 @@
 
 .res-content {
     margin: 15px;
+}
+
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-cards{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+    background-color: rgba(239, 238, 231, 0.941);
+}
+
+.login{
+    padding: 0px 20px;
+    margin-right: 20px;
 }
