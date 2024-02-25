@@ -1,0 +1,13 @@
+useEffect Hook Deependency array ---
+If no dependency array - useEffect will be called on every render
+If empty dependency array - useEffect will be called on initial render (just once)
+If element is there in dependency array - useEffect will be called whenever that element is updated
+
+useState best practices ---
+declare state variables at the top inside function component
+Never declare state variables in some condition of loops
+
+Routing ---
+Library - react-router-dom
+import createBrowserRouter and RouterProvider from this Library
+then add configuration for different pages here
