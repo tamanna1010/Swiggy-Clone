@@ -1,0 +1,56 @@
+FUNCTIONAL COMPONENTS ----
+This is just a function
+const Name = () => {}
+
+
+CLASS BASED COMPONENTS ----
+This is just a class
+class User extends React.Component{}
+
+constituents ---
+
+render method
+constructor method
+super keyword
+
+STATE IN CLASS BASED COMPONENTS ---
+
+this.state({
+    count:0
+})
+this.setState({
+    count: this.state.count + 1
+})
+
+COMPONENT LIFECYCLE METHODS --
+
+1. Mounting ---
+    - constructor
+    - render
+    - componentDidMount()
+2. Updating ---
+    - set state
+    - componentDidUpdate()
+3. Unmounting ---
+    - componentWillUnmount()
+
+
+LIFECYCLE METHODS IN USEEFFECT HOOK ----
+
+1. Component Did Mount
+ useEffect(()=>{
+    console.log("componentDidMount called")
+ }, [])
+
+2. component Did Update 
+ useEffect(()=>{
+    console.log("componentDidUpdate called");
+ }, [count])
+
+3. component will Unmount
+ useEffect(()=>{
+    const timer = setInterval(()=>{}, 1000);
+    return (
+        clearInterval(timer);
+    )
+ })
