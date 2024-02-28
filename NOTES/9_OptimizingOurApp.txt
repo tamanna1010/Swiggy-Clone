@@ -1,0 +1,4 @@
+Single Responsibility  Principle ---
+Every component and function should be responsible for a single task. 
+It incraeses modularity, reusability, readability
+
