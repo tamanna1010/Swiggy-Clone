@@ -1,0 +1,15 @@
+TAILWIND CSS NOTES ---
+
+Go to Tailwind css docs
+Framework guides 
+Parcel 
+Follow all the steps mentioned 
+
+Steps of installation - 
+npm install -D tailwindcss postcss
+npx tailwindcss init - this will create tailwind.config.js
+
+VS Code Extension - Tailwind CSS Intellisense - which makes easy to use 
+
+How to use Media Queries in Tailwind ?
+bg-amber-200 sm:bg-pink-200 lg:bg-green-200
