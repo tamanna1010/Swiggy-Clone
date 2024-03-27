@@ -1,0 +1,50 @@
+Higher Order Component ---
+A component which takes another component as an Input and enhances it and then returns a component
+
+Install React Developer Tools Chrome extension
+In inspect - you will get Components and Profiler
+
+Components - 
+Left side - Virtual DOM (UI Layer)
+Right side - props (Data layer)
+
+Profiler - records your react application
+Whatever action you perform, it will give the time of rendering and the whole routes you navigated
+
+Controlled and Uncontrolled components ---
+Restaurant menu is passing the state t res category - so res category is a controlled component
+
+Modifying the state variable of parent ---
+not possible directly, but indirectly we can do that
+This is called lifting the state up 
+
+Props Drilling ---
+When props get passed to hierarchial components 
+even though there was no need of those props
+
+CONTEXT ---
+create CONTEXT
+use CONTEXT
+Here, keep only the data that you used at multiple places
+
+2 Usages of context - 
+1. using hooks
+2. using context.consumer
+
+<UserContext.Consumer>
+{(data) => console.log(data)}
+</UserContext.Consumer>
+
+Modifying the context value ---
+<UserContext.Provider value={Diksha}>
+// Diksha (whole app)
+<UserContext.Provider value={Tamanna}>
+//Tamanna (Header)
+<UserContext.Provider value={Debdeepa}>
+// Debdeepa (Restaurant Card)
+</UserContext.Provider>
+</UserContext.Provider>
+</UserContext.Provider>
+
+You can modify only a single piece of application, whereever you wrap context.provider
+
