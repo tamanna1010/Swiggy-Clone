@@ -2,9 +2,13 @@ import { LOGO_URL } from "../utils/constants";
 import {useState, useContext} from "react";
 import { Link } from "react-router-dom";
 import userContext from "../utils/userContext";
+import { useSelector } from "react-redux";
 const Header = () => {
     const [btnNameReact, setbtnNameReact] = useState("Login");
     const {loggedInUser} = useContext(userContext)
+
+    const cartItems = useSelector((store)=>store.cart.items);
+    console.log(cartItems);
     
     return (
         <>
@@ -18,7 +22,7 @@ const Header = () => {
                     <li className="px-4"><Link to="/">Home</Link></li>
                     <li className="px-4"><Link to="/about">About</Link></li>
                     <li className="px-4"><Link to="/contact">Contact</Link></li>
-                        <li className="px-4">Cart</li>
+                        <li className="px-4 font-bold"><Link to="/cart">Cart ({cartItems.length} items)</Link></li>
                         <button className="login" onClick={()=>{btnNameReact==="Login" ? setbtnNameReact("Logout") : setbtnNameReact("Login")}}>{btnNameReact}</button>
                     <li className="px-4 font-bold">{loggedInUser}</li>
                     </ul>

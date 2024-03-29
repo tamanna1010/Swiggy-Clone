@@ -1,0 +1,55 @@
+REDUX ---
+
+Redux is not mandatory
+Redux is a separate state management library
+We also have Zustand - another state managemement library
+
+Other libraries - 
+Vanilla redux - old way of redux - way too complicated
+React Redux
+Redux toolkit - newer way of writing redux (standard way)
+
+There can bemultiple slices of redux store - 
+Cart slice
+user slice
+theme slice
+
+REDUX THEORY - 
+
+WRITING TO THE REDUX STORE ---
+Click on ADD Button
+Dispatches an action
+Calls a reducer function
+updates one slice of the cart 
+
+READING FROM THE REDUX STORE ---
+Header component is subscribing to the redux store
+Using a selector
+Header component will be updated with the new data
+
+REDUX TOOLKIT STEPS ---
+Install @reduxjs/toolkit and react-redux
+Build our store
+Connect our store to our app
+Slice(cartslice)
+Dispatch(action)
+selector
+
+Optimizing the redux performance ---
+
+Subscribe to a small portion of store
+Mutating the state ---
+Older redux - don't mutate the state, create a copy and return the copy
+Newer redux - we have to mutate the state
+Newer redux Toolkit uses Immer js Library to calculate diff and mutate the state and return the new state
+
+RTK Says - either mutate the state or return a new state
+state.items.length=0
+(OR)
+return {items: []}
+
+REDUX DEV TOOLS ---
+Chrome extension
+
+RTK Query - is used to fetch data (make API Calls)
+Previously, we had Redux middlewares or thunk for this 
